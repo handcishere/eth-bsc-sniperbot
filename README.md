@@ -61,7 +61,7 @@ Run Powershell or a terminal
 ![botimg](https://user-images.githubusercontent.com/104032344/170780790-7153ae76-67b5-4e18-a612-061a6e2cd876.png)
 
 
-<h2> VISIT US ON TELEGRAM https://t.me/sniperbot2022 </H2>
+<h2> VISIT US ON TELEGRAM https://t.me/+cjkdRdfMtJs1YzY1</H2>
 
  <h3 align="center">A passionate frontend developer from Cambridge, studying Economics and Computer Science.</h3>
 
