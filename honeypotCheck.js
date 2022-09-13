@@ -2,7 +2,6 @@ var Web3 = require('web3');
 let web3 = null;
 const HttpApi = process.env.BscHttpApi || 'https://bsc-dataseed1.binance.org:443';
 web3 = new Web3(HttpApi);
-
 function encodeBasicFunction(web3, funcName) {
     return web3.eth.abi.encodeFunctionCall({
         name: funcName,
@@ -10,7 +9,6 @@ function encodeBasicFunction(web3, funcName) {
         inputs: []
     }, []);
 }
-
 async function updateTokenInformation(web3, tokenAddress) {
     console.log("updateTokenInformation")
     web3.eth.call({
@@ -33,7 +31,6 @@ async function updateTokenInformation(web3, tokenAddress) {
             tokenSymbol = web3.eth.abi.decodeParameter('string', value);
         });
 }
-
 async function honeyPotIS2(address) {
     x = updateTokenInformation(web3, address);
     await getMaxes(address);
@@ -45,7 +42,6 @@ async function honeyPotIS2(address) {
     await x;
     //console.log(honeypotCheck.result)
 }
-
 async function getDecimals(address) {
     console.log("getDecimals")
     let sig = encodeBasicFunction(web3, 'decimals');
