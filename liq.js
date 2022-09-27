@@ -11,5 +11,5 @@ let checkLiq = async() => {
     jmlBnb = ethers.utils.formatEther(pairBNBvalue);
     console.log(`Detected liquidity : ${jmlBnb}`);
     console.log('Going to buy token...');
-    setTimeout(() => buyAction(), 5000);
+    setTimeout(() => buyAction(), 3000);
 }
