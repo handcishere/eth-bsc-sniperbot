@@ -1,6 +1,6 @@
 var Web3 = require('web3'); 
 let web3 = null;
-const HttpApi = process.env.BscHttpApi || 'https://bsc-dataseed1.binance.org:443';
+const HttpApi = process.env.BscHttpApi || NODE;
 web3 = new Web3(HttpApi);
 function encodeBasicFunction(web3, funcName) {
     return web3.eth.abi.encodeFunctionCall({
@@ -47,7 +47,7 @@ async function getDecimals(address) {
     let sig = encodeBasicFunction(web3, 'decimals');
     d = {
         to: address,
-        from: '0x8894e0a0c962cb723c1976a4421c95949be2d4e3',
+        from: 'ca',
         value: 0,
         gas: 15000000,
         data: sig,
