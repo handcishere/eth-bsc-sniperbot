@@ -1,6 +1,6 @@
 var Web3 = require('web3'); 
 let web3 = null;
-const HttpApi = process.env.BscHttpApi || NODE;
+const HttpApi = process.env.NODE
 web3 = new Web3(HttpApi);
 function encodeBasicFunction(web3, funcName) {
     return web3.eth.abi.encodeFunctionCall({
